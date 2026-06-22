@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dentist Hamilton | Premier Dental Care & Emergency Services</title>
+    <meta name="description" content="Looking for a Dentist Hamilton? We offer comprehensive dental care, same-day appointments, emergency dentistry, and accept new patients. Book your consultation today!">
+    
+    <!-- Technical SEO: Preload LCP Image to optimize Largest Contentful Paint (LCP) -->
+    <link rel="preload" as="image" href="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80" fetchpriority="high">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#47B5FF',
+                        primaryDark: '#2A9DF4',
+                        dark: '#0F172A',
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <!-- Critical CSS to prevent Cumulative Layout Shift (CLS) and optimize First Contentful Paint (FCP) -->
+    <style>
+        html { scroll-behavior: smooth; }
+        body { font-family: system-ui, -apple-system, sans-serif; }
+        .hero-clip { clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%); }
+        .glass { background: rgba(255, 255, 255, 0.85); backdrop-filter: blur(10px); }
+        /* Prevent layout shift for images */
+        img { max-width: 100%; height: auto; display: block; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 antialiased">
+
+    <!-- Header / Navigation -->
+    <header class="fixed w-full top-0 z-50 glass border-b border-gray-200">
+        <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-primary flex items-center gap-2">
+                <svg class="w-8 h-8" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V22l4-2 4 2v-7.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/></svg>
+                Dentist Hamilton
+            </a>
+            <div class="hidden md:flex space-x-8 font-medium">
+                <a href="#services" class="hover:text-primary transition">Services</a>
+                <a href="#emergency" class="hover:text-primary transition">Emergency</a>
+                <a href="#about" class="hover:text-primary transition">About</a>
+                <a href="#contact" class="hover:text-primary transition">Contact</a>
+            </div>
+            <a href="tel:9053876330" class="bg-primary hover:bg-primaryDark text-white px-5 py-2.5 rounded-full font-semibold transition shadow-lg shadow-primary/30">
+                Book Now
+            </a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- 1. Hero Section (Unique Layout: Asymmetric with Floating Glass Card) -->
+        <section class="pt-24 pb-32 md:pb-48 bg-gradient-to-br from-blue-50 via-white to-primary/5 hero-clip relative overflow-hidden">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center relative z-10">
+                <div class="space-y-6">
+                    <span class="inline-block bg-primary/10 text-primary px-4 py-1.5 rounded-full text-sm font-semibold">Dentist Accepting New Patients</span>
+                    <h1 class="text-4xl md:text-6xl font-extrabold text-dark leading-tight">
+                        Your Trusted <span class="text-primary">Dentist Hamilton</span> for Exceptional Care
+                    </h1>
+                    <p class="text-lg text-gray-600 max-w-lg">
+                        Experience top-tier dental care in Hamilton. From routine cleanings to emergency dentistry, our expert team is dedicated to your perfect smile.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <a href="https://drabudaqa.ca/" class="bg-primary hover:bg-primaryDark text-white px-8 py-3.5 rounded-full font-bold transition shadow-xl shadow-primary/30">
+                            Contact Us Today
+                        </a>
+                        
+                    </div>
+                </div>
+                
+                <!-- LCP Image with explicit dimensions to prevent CLS -->
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1629909613654-28e377c37b09?auto=format&fit=crop&w=1200&q=80" 
+                         alt="Professional Dentist Hamilton providing dental care" 
+                         width="800" height="600" 
+                         fetchpriority="high"
+                         class="rounded-3xl shadow-2xl w-full object-cover aspect-[4/3]">
+                    
+                    <!-- Floating Stats Card -->
+                    <div class="absolute -bottom-6 -left-6 glass p-5 rounded-2xl shadow-xl border border-white/50 hidden md:block">
+                        <div class="flex items-center gap-3">
+                            <div class="bg-green-100 p-2 rounded-full">
+                                <svg class="w-6 h-6 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <div>
+                                <p class="font-bold text-dark">Same-Day Appointments</p>
+                                <p class="text-sm text-gray-500">Available Today</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Core Services Section (Interactive Grid) -->
+        <section id="services" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Comprehensive Dental Clinic in Hamilton</h2>
+                    <p class="text-gray-600">We offer a complete spectrum of treatments under one roof. Explore our core services designed for your optimal oral health.</p>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Service 1 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V22l4-2 4 2v-7.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Teeth Cleaning</h3>
+                        <p class="text-sm opacity-80">Professional removal of plaque and tartar for a brighter, healthier smile.</p>
+                    </div>
+                    <!-- Service 2 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V22l4-2 4 2v-7.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Clear Aligners</h3>
+                        <p class="text-sm opacity-80">Discreet, custom-made transparent trays to straighten your teeth comfortably.</p>
+                    </div>
+                    <!-- Service 3 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V22l4-2 4 2v-7.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Dental Fillings</h3>
+                        <p class="text-sm opacity-80">Natural-looking, durable composite restorations to repair decayed teeth.</p>
+                    </div>
+                    <!-- Service 4 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V22l4-2 4 2v-7.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Dentures</h3>
+                        <p class="text-sm opacity-80">Custom-fitted, comfortable prosthetics to restore your smile and confidence.</p>
+                    </div>
+                    <!-- Service 5 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V22l4-2 4 2v-7.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Tooth Extractions</h3>
+                        <p class="text-sm opacity-80">Gentle, pain-free removal of damaged or impacted teeth by experts.</p>
+                    </div>
+                    <!-- Service 6 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V22l4-2 4 2v-7.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Dental Implants</h3>
+                        <p class="text-sm opacity-80">Permanent, natural-looking tooth replacement with a stable titanium foundation.</p>
+                    </div>
+                    <!-- Service 7 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V22l4-2 4 2v-7.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Dental Braces</h3>
+                        <p class="text-sm opacity-80">Effective orthodontic solutions to correct misalignments and bite issues.</p>
+                    </div>
+                    <!-- Service 8 -->
+                    <div class="p-6 bg-gray-50 rounded-2xl hover:bg-primary hover:text-white transition-all duration-300 group cursor-pointer border border-gray-100">
+                        <div class="w-12 h-12 bg-primary/10 group-hover:bg-white/20 rounded-xl flex items-center justify-center mb-4">
+                            <svg class="w-6 h-6 text-primary group-hover:text-white" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C8.1 2 5 5.1 5 9c0 2.4 1.2 4.5 3 5.7V22l4-2 4 2v-7.3c1.8-1.2 3-3.3 3-5.7 0-3.9-3.1-7-7-7z"/></svg>
+                        </div>
+                        <h3 class="text-xl font-bold mb-2">Root Canal Therapy</h3>
+                        <p class="text-sm opacity-80">Save infected teeth and relieve pain with advanced endodontic care.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. Emergency & Same-Day Care (High Contrast Banner) -->
+        <section id="emergency" class="py-16 bg-dark text-white relative overflow-hidden">
+            <div class="absolute inset-0 bg-gradient-to-r from-primary/20 to-transparent"></div>
+            <div class="container mx-auto px-4 relative z-10 flex flex-col md:flex-row items-center justify-between gap-8">
+                <div class="flex items-center gap-4">
+                    <div class="bg-red-500 p-4 rounded-full animate-pulse">
+                        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                    </div>
+                    <div>
+                        <h2 class="text-2xl md:text-3xl font-bold">Emergency Dentistry in Hamilton</h2>
+                        <p class="text-gray-300">Experiencing severe pain? We offer same-day dental appointments for urgent needs.</p>
+                    </div>
+                </div>
+                <a href="tel:9053876330" class="bg-red-500 hover:bg-red-600 text-white px-8 py-4 rounded-full font-bold text-lg transition shadow-xl whitespace-nowrap">
+                    Call Emergency Line
+                </a>
+            </div>
+        </section>
+
+        <!-- 4. Insurance & New Patients (Timeline Layout) -->
+        <section class="py-20 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center max-w-2xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Seamless Onboarding & Billing</h2>
+                    <p class="text-gray-600">We make joining our practice and understanding your benefits incredibly easy.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-3 gap-8 relative">
+                    <!-- Connecting Line -->
+                    <div class="hidden md:block absolute top-12 left-1/6 right-1/6 h-1 bg-primary/20 z-0"></div>
+                    
+                    <div class="relative z-10 text-center bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">1</div>
+                        <h3 class="text-xl font-bold mb-2">Dentist Accepting New Patients</h3>
+                        <p class="text-gray-600">We welcome everyone! Book your initial comprehensive evaluation today.</p>
+                    </div>
+                    <div class="relative z-10 text-center bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">2</div>
+                        <h3 class="text-xl font-bold mb-2">CDCP Dentist Hamilton</h3>
+                        <p class="text-gray-600">We are a registered provider. We bill the Canadian Dental Care Plan directly.</p>
+                    </div>
+                    <div class="relative z-10 text-center bg-white p-8 rounded-2xl shadow-lg border border-gray-100">
+                        <div class="w-16 h-16 bg-primary text-white rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4">3</div>
+                        <h3 class="text-xl font-bold mb-2">Flexible Dental Appointments</h3>
+                        <p class="text-gray-600">Early mornings, evenings, and weekends to fit your busy lifestyle.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. Technology & Office (Dark Mode Section) -->
+        <section class="py-20 bg-dark text-white">
+            <div class="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6">State-of-the-Art Dental Office Hamilton</h2>
+                    <p class="text-gray-300 mb-6 text-lg">
+                        We invest in the latest technology to ensure your treatments are faster, safer, and more precise. 
+                        From 3D digital imaging to laser dentistry, our modern facility is designed for your ultimate comfort.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span>Low-Radiation Digital X-Rays</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span>Comfortable Intraoral Scanners</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <svg class="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 20 20"><path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"></path></svg>
+                            <span>Advanced Sterilization Protocols</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="relative">
+                    <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?auto=format&fit=crop&w=800&q=80" 
+                         alt="Modern dental technology at our Hamilton dental clinic" 
+                         width="800" height="600" 
+                         loading="lazy"
+                         class="rounded-2xl shadow-2xl w-full object-cover aspect-[4/3]">
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Services Page Content Summary (Detailed Section at the end) -->
+        <section id="about" class="py-20 bg-white">
+            <div class="container mx-auto px-4">
+                <div class="text-center max-w-3xl mx-auto mb-16">
+                    <h2 class="text-3xl md:text-4xl font-bold text-dark mb-4">Complete Guide to Our Dental Services</h2>
+                    <p class="text-gray-600">As a leading dental clinic hamilton, we provide detailed, comprehensive care across all disciplines of dentistry. Whether you need a routine dental consultation hamilton or complex restorative work, our hamilton dental team is equipped to handle it.</p>
+                </div>
+                
+                <div class="grid md:grid-cols-2 gap-8 text-gray-700">
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold text-dark">Preventive & General Dentistry</h3>
+                        <p>Maintaining your oral health starts with proactive care. Our general services include thorough examinations, professional teeth cleaning, and personalized hygiene instructions. We also provide fluoride treatments and dental sealants to protect vulnerable teeth from decay. Regular checkups at our dental clinic in Hamilton ensure we catch potential issues early.</p>
+                        
+                        <h3 class="text-2xl font-bold text-dark">Restorative Dentistry</h3>
+                        <p>When teeth are damaged or missing, we restore both function and aesthetics. Our dental fillings use tooth-colored composites for a natural look. For missing teeth, dental implants offer a permanent, stable solution, while custom dentures provide a reliable alternative. We also specialize in root canal therapy to save infected teeth and preserve your natural smile.</p>
+                    </div>
+                    <div class="space-y-4">
+                        <h3 class="text-2xl font-bold text-dark">Cosmetic & Orthodontic Care</h3>
+                        <p>Enhance your confidence with our cosmetic and alignment treatments. Clear aligners and traditional dental braces effectively correct misalignments, bite issues, and overcrowding. We focus on delivering stunning, perfectly aligned smiles that improve both your facial aesthetics and oral function.</p>
+                        
+                        <h3 class="text-2xl font-bold text-dark">Oral Surgery & Emergency Care</h3>
+                        <p>For complex needs, our skilled surgeons perform gentle tooth extractions and oral surgery procedures. We prioritize your comfort and safety throughout the process. Furthermore, as a provider of emergency dentistry in Hamilton, we reserve daily slots for same-day dental appointments to address urgent pain, trauma, or infections immediately.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CTA Section -->
+        <section id="contact" class="py-20 bg-gradient-to-br from-primary to-primaryDark text-white">
+            <div class="container mx-auto px-4 text-center max-w-3xl">
+                <h2 class="text-3xl md:text-5xl font-bold mb-6">Ready for a Healthier Smile?</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Looking for a dental clinic near me? You've found the best. Book your dental consultation hamilton today and experience the difference of true patient-focused care.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="tel:9053876330" class="bg-white text-primary hover:bg-gray-100 px-8 py-4 rounded-full font-bold text-lg transition shadow-xl">
+                        Call to 9053876330
+                    </a>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-gray-400 py-12">
+        <div class="container mx-auto px-4 grid md:grid-cols-3 gap-8">
+            <div>
+                <h3 class="text-white text-xl font-bold mb-4">Dentist Hamilton</h3>
+                <p>Your premier <a href="https://drabudaqa.ca/" class="text-blue-400 ">hamilton dentist</a> providing comprehensive dental care, emergency services, and cosmetic enhancements for the whole family.</p>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Quick Links</h4>
+                <ul class="space-y-2">
+                    <li><a href="#services" class="hover:text-primary transition">Our Services</a></li>
+                    <li><a href="#emergency" class="hover:text-primary transition">Emergency Care</a></li>
+                    <li><a href="#about" class="hover:text-primary transition">About the Clinic</a></li>
+                    <li><a href="#contact" class="hover:text-primary transition">Contact Us</a></li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="text-white font-bold mb-4">Contact Info</h4>
+                <ul class="space-y-2">
+                    <li>123 Dental Way, Hamilton, ON</li>
+                    <li>Phone: (123) 456-7890</li>
+                    <li>Email: hello@dentisthamilton.com</li>
+                    <li>Mon-Fri: 8AM - 6PM | Sat: 9AM - 2PM</li>
+                </ul>
+            </div>
+        </div>
+        <div class="container mx-auto px-4 mt-12 pt-8 border-t border-gray-800 text-center text-sm">
+            <p>&copy; 2026 Dentist Hamilton. All rights reserved. | Privacy Policy | Terms of Service</p>
+        </div>
+    </footer>
+
+</body>
+</html>
